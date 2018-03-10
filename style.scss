@@ -1,0 +1,163 @@
+$width: 400px;
+$border: 1px solid #ccc;
+$padding: 25px;
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.blocks {
+	display: flex;
+	flex-direction: row;
+	height: $width * 3.5;
+	width: $width * 2.4;
+	background-color: #BBDCDE;
+}
+
+.first {
+	justify-content: space-between;
+}
+
+.third {
+	justify-content: space-around;
+}
+
+.first,
+.third {
+	width: $width;
+	display: flex;
+	flex-direction: column;
+	margin: $padding * 1.5;
+	p {
+		margin: $padding/2;
+		color: #7F7F7F;
+	}
+	h3 {
+		margin-top: $padding/2;
+		margin-left: $padding/2;
+		color: #000;
+	}
+	.button {
+		width: $width/4.5;
+		height: $width/13;
+		text-align: center;
+		line-height: $width/13;
+		color: #fff;
+		font-size: 12px;
+		border: $border;
+		margin-left: $padding/2;
+		margin-bottom: $padding/2;
+		background-color: #7F7F7F;
+	}
+	.button_right {
+		float: right;
+		margin-right: $padding/2;
+		margin-bottom: $padding/2;
+	}
+}
+
+.second {
+	border: $border;
+	width: 0;
+	margin-top: $padding * 1.5;
+	>div {
+		display: flex;
+		flex-direction: column;
+	}
+	div:first-child {
+		justify-content: space-between;
+		height: $width * 1.5;
+		margin-bottom: $padding * 7;
+		>a:nth-child(2) {
+			background-color: red;
+		}
+	}
+	div:last-child {
+		justify-content: space-around;
+		height: $width * 1.45;
+		a {
+			background-color: orangered;
+		}
+	}
+	a {
+		margin-left: $padding * (-1);
+		width: $width/8;
+		height: $width/8;
+		line-height: $width/6;
+		text-align: center;
+		border-radius: 50%;
+		border: 2px solid #fff;
+		background-color: lawngreen;
+		color: #fff;
+			}
+}
+
+.fourth {
+	margin-top: $padding * 1.5;
+	width: 0;
+	
+	>div {
+		display: flex;
+		flex-direction: column;
+	}
+	div:first-child {
+		justify-content: space-between;
+		height: $width * 1.5;
+		:first-child,
+		:nth-child(3) {
+			margin-left: $padding * 2;
+		}
+		:nth-child(2) {
+			margin-left: $padding * (-4);
+		}
+	}
+	div:last-child {
+		justify-content: space-around;
+		height: $width * 1.45;
+		margin-top: $padding * 7;
+		:first-child {
+			margin-left: $padding * (-4);
+		}
+		:last-child {
+			margin-left: $padding * 2;
+		}
+}
+	p {
+		width: $width/6;
+		height: $width/8;
+		line-height: $width/8;
+		font-size: 20px;
+		color: #7F7F7F;
+	}
+}
+
+.first_first,
+.first_second,
+.first_third,
+.third_first,
+.third_second {
+	width: $width;
+	border: $border;
+	background-color: #cff;
+}
+
+.first_first,
+.third_second {
+	height: $width * 0.45;
+}
+
+.first_second {
+	height: $width * 0.63;
+}
+
+.first_third {
+	height: $width * 0.35;
+}
+
+.third_first {
+	height: $width * 0.4;
+}
+
+.clearfix {
+	clear: both;
+}

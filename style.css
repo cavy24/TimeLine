@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.blocks {
+  display: flex;
+  flex-direction: row;
+  height: 1400px;
+  width: 960px;
+  background-color: #BBDCDE; }
+
+.first {
+  justify-content: space-between; }
+
+.third {
+  justify-content: space-around; }
+
+.first,
+.third {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 37.5px; }
+  .first p,
+  .third p {
+    margin: 12.5px;
+    color: #7F7F7F; }
+  .first h3,
+  .third h3 {
+    margin-top: 12.5px;
+    margin-left: 12.5px;
+    color: #000; }
+  .first .button,
+  .third .button {
+    width: 88.88889px;
+    height: 30.76923px;
+    text-align: center;
+    line-height: 30.76923px;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    margin-left: 12.5px;
+    margin-bottom: 12.5px;
+    background-color: #7F7F7F; }
+  .first .button_right,
+  .third .button_right {
+    float: right;
+    margin-right: 12.5px;
+    margin-bottom: 12.5px; }
+
+.second {
+  border: 1px solid #ccc;
+  width: 0;
+  margin-top: 37.5px; }
+  .second > div {
+    display: flex;
+    flex-direction: column; }
+  .second div:first-child {
+    justify-content: space-between;
+    height: 600px;
+    margin-bottom: 175px; }
+    .second div:first-child > a:nth-child(2) {
+      background-color: red; }
+  .second div:last-child {
+    justify-content: space-around;
+    height: 580px; }
+    .second div:last-child a {
+      background-color: orangered; }
+  .second a {
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    line-height: 66.66667px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: lawngreen;
+    color: #fff; }
+
+.fourth {
+  margin-top: 37.5px;
+  width: 0; }
+  .fourth > div {
+    display: flex;
+    flex-direction: column; }
+  .fourth div:first-child {
+    justify-content: space-between;
+    height: 600px; }
+    .fourth div:first-child :first-child,
+    .fourth div:first-child :nth-child(3) {
+      margin-left: 50px; }
+    .fourth div:first-child :nth-child(2) {
+      margin-left: -100px; }
+  .fourth div:last-child {
+    justify-content: space-around;
+    height: 580px;
+    margin-top: 175px; }
+    .fourth div:last-child :first-child {
+      margin-left: -100px; }
+    .fourth div:last-child :last-child {
+      margin-left: 50px; }
+  .fourth p {
+    width: 66.66667px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #7F7F7F; }
+
+.first_first,
+.first_second,
+.first_third,
+.third_first,
+.third_second {
+  width: 400px;
+  border: 1px solid #ccc;
+  background-color: #cff; }
+
+.first_first,
+.third_second {
+  height: 180px; }
+
+.first_second {
+  height: 252px; }
+
+.first_third {
+  height: 140px; }
+
+.third_first {
+  height: 160px; }
+
+.clearfix {
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
